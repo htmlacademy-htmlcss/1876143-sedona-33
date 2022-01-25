@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Главная страница/модальное окно</title>
+  </head>
+  <body>
+     <form action="#" class="main-page-modal-window" method="post">
+       <h1 class="model-window-title">Поиск гостиницы в Седоне</h1>
+       <button class="modal-windiw-close"><span class="visually-hidde">закрыть</span></button>
+      <ul class="modal-window-list">
+      <li class="modal-window-item"><label for="">Дата заезда:
+        <input type="text name="check-in">
+      </label>
+      </li>
+      <li class="modal-window-item"><label for="">Дата выезда:
+        <input type="text" step="date" name="departue">
+      </label>
+      </li>
+      <li class="modal-window-item"><label for="">Взрослые:
+        <button class="button-prev-number">-</button>
+        <input type="text" name="adults">
+        <button class="button-next-number">+</button>
+      </label>
+      </li>
+      <li class="modal-window-item"><label for="">Дети:
+        <button class="explanation"><span class="visualli-hidden">пояснение</span>
+        </button>
+        <button class="button-prev-number">-</button>
+        <input type="text" name="children">
+        <button class="button-next-number">+</button>
+      </label>
+      </li>
+    </ul>
+    <button type="submit" class="">начать поиск</button>
+     </form>
+  </body>
