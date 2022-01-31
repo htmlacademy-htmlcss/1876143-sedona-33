@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Страница каталога</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -34,8 +35,8 @@
             </a>
           </li>
           <li class="navigation-user-item">
-             <a href="#" class="navigation-link">
-              <span class="visually-hidden">Вход</span>
+             <a href="#" class="navigation-link button">
+              <span class="visually-hidden">Хочу сюда</span>
              </a>
           </li>
         </ul>
@@ -46,7 +47,7 @@
   <h1 class="main-heading-catalog">Гостиницы Седоны</h1>
   <ul class="breadcrumbs-list">
     <li class="breadcrumbs-item">
-      <a href="#" class="breadcrumbs-link">
+      <a href="#" class="breadcrumbs-link ">
         <span class="visually-hidden">главная</span>
       </a>
     </li>
@@ -112,17 +113,17 @@
   </li>
 </ul>
 </fieldset>
-  <button class="button" type="submit">применить</button>
-  <button class="button" type="reset">сбросить</button>
+  <button class="button apply-filters" type="submit">применить</button>
+  <button class="button reset-filters" type="reset">Cбросить</button>
   </form>
 </section>
 <section class="hotels">
 <h2 class="visually-hidden">варианты гостиниц</h2>
 <span class="number-of-hotels">Найдено гостиниц: 38</span>
   <select class="select-control" aria-label="Сортировка">
-    <option value="popular">Сначала дешевые</option>
-    <option value="cheap">Сначала популярные</option>
-    <option value="expensive">Сначала дорогое</option>
+    <option value="cheap" class="select-categories">Сначала дешевые</option>
+    <option value="popular" class="select-categories">Сначала популярные</option>
+    <option value="expensive" class="select-categories">Сначала дорогие</option>
   </select>
   <a href="#" class="button button-light">
     <span class="visually-hidden">Показать карточки</span>
@@ -139,10 +140,10 @@
         <img class="hotel-card-image" src="images/hotel-1.jpg" alt="гостиница амара резорт" width="300" height="220" >
         <h3 class="hotel-card-title">Amara Resort & Spa</h3>
       </a>
-        <span>Гостиница</span>
+        <span class="hotel-card-text">Гостиница</span>
         <span class="hotel-card-price">От 4000 ₽ </span>
-        <a href="#" class="hotel-more-information-button button">подробнее</a>
-        <a href="#" class="hotel-favorites-button button">В избранное</a>
+        <a href="#" class="hotel-card-button hotel-more-information-button button">подробнее</a>
+        <a href="#" class="hotel-card-button hotel-favorites-button button">В избранное</a>
        <div class="rating-stars"></div>
        <div class="rating-points"><span class="rating-points-text">Рейтинг: 8,5</span></div>
     </li>
@@ -151,10 +152,10 @@
       <img class="hotel-card-image" src="images/hotel-2.jpg" alt="гостиница дезорт куэли ин" width="300" height="220">
       <h3 class="hotel-card-title">Desert Quail Inn</h3>
       </a>
-      <span>Гостиница</span>
+      <span class="hotel-card-text">Гостиница</span>
       <span class="hotel-card-price">От 3000 ₽ </span>
-      <a href="#" class="hotel-more-information-button button">подробнее</a>
-      <a href="#" class="hotel-favorites-button button">В избранное</a>
+      <a href="#" class="hotel-card-button hotel-more-information-button button">подробнее</a>
+      <a href="#" class="hotel-card-button hotel-favorites-button button">В избранное</a>
      <div class="rating-stars"></div>
      <div class="rating-points"><span class="rating-points-text">Рейтинг: 8,9</span></div>
     </li>
@@ -163,10 +164,10 @@
     <img class="hotel-card-image" src="images/hotel-3.jpg" alt="гостиница виллас эт поко диабло" width="300" height="220">
     <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
     </a>
-    <span>Гостиница</span>
+    <span class="hotel-card-text">Гостиница</span>
     <span class="hotel-card-price">От 3000 ₽ </span>
-    <a href="#" class="hotel-more-information-button button">подробнее</a>
-    <a href="#" class="hotel-favorites-button button-active">В избранном</a>
+    <a href="#" class="hotel-card-button hotel-more-information-button button">подробнее</a>
+    <a href="#" class="hotel-card-button hotel-favorites-button button-active button ">В избранном</a>
    <div class="rating-stars"></div>
    <div class="rating-points"><span class="rating-points-text">Рейтинг: 9,2</span></div>
   </li>
@@ -175,17 +176,17 @@
   <img class="hotel-card-image" src="images/hotel-4.jpg" alt="гостиница грин три ин" width="300" height="220">
   <h3 class="hotel-card-title">GreenTree Inn</h3>
   </a>
-  <span>Гостиница</span>
+  <span class="hotel-card-text">Гостиница</span>
   <span class="hotel-card-price">От 3000 ₽ </span>
-  <a href="#" class="hotel-more-information-button button">подробнее</a>
-  <a href="#" class="hotel-favorites-button button">В избранное</a>
+  <a href="#" class="hotel-card-button hotel-more-information-button button">подробнее</a>
+  <a href="#" class="hotel-card-button hotel-favorites-button button">В избранное</a>
  <div class="rating-stars"></div>
  <div class="rating-points"><span class="rating-points-text">Рейтинг: 8,5</span></div>
 </li>
   </ul>
 <button class="more-cards">Загрузить ещё</button>
 
-<ol class="catalog-pagination">
+<ol class="catalog-pagination-list">
   <li class="pagination-item">
     <a class="pagination-link pagination-current">1</a>
   </li>
@@ -205,14 +206,13 @@
     <a class="pagination-link" href="#">10</a>
   </li>
 </ol>
-<span>Гостиниц на странице:</span>
+<span class="description-dropdown-list">Гостиниц на странице:</span>
 <select class="cards-on-page" arial-label="количество карт на странице">
   <option value="one">1</option>
   <option value="two">2</option>
   <option value="three">3</option>
   <option value="for" class="current-number">4</option>
 </select>
-
 </section>
     <section class="subscription catalog-subscription">
     <h2 class="visually-hidden">форма подписки на рассылку</h2>
@@ -222,7 +222,7 @@
       </p>
       <form action="#" mathod="get" class="subscription-form">
         <input type="text" name="e-mail" value="Ваш e-mail">
-        <input type="submit" value="подписаться">
+        <input type="submit" class="button subscription-button" value="подписаться">
       </form>
     </section>
   </main>
@@ -230,17 +230,17 @@
       <section class="footer-social">
        <ul class="social">
       <li class="social-item">
-        <a href="https://twitter.com/htmlacademy_ru" class="social-link button">
+        <a href="https://twitter.com/htmlacademy_ru" class="social-link-button">
           <span class="visually-hidden social-icon">твиттер</span>
         </a>
       </li>
       <li class="social-item">
-        <a href="https://www.facebook.com/htmlacademy" class="social-link button">
+        <a href="https://www.facebook.com/htmlacademy" class="social-link-button">
           <span class="visually-hidden social-icon">фейсбук</span>
         </a>
       </li>
       <li class="social-item">
-        <a href="https://www.youtube.com/c/HTMLAcademyRUS" class="social-link button">
+        <a href="https://www.youtube.com/c/HTMLAcademyRUS" class="social-link-button">
           <span class="visually-hidden social-icon">ютуб</span>
         </a>
       </li>
@@ -253,7 +253,7 @@
       </section>
       <section class="authors ">
         <a href="https://htmlacademy.ru/" class="htmlacademy-link">
-          <img src="#" alt="html academy" class="footer-authors-logo">
+          <img src="/images/logo_htmlacademy.svg" alt="html academy" class="footer-authors-logo">
         </a>
       </section>
     </footer>
