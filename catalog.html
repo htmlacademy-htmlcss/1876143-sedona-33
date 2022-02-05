@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
+    <div class="page-container">
+      <!--секция header-->
     <header class="page-header">
       <a href="#" class="header-logo-link">
         <img src="images/logo.png" alt="логотип города седона" class="logo" width="139" height="70">
@@ -42,7 +44,8 @@
         </ul>
       </nav>
     </header>
-  <main class="main-catalog">
+  <main class="main-container main-catalog">
+    <!--секция choice-->
 <section class="choice">
   <h1 class="main-heading-catalog">Гостиницы Седоны</h1>
   <ul class="breadcrumbs-list">
@@ -60,7 +63,7 @@
   </ul>
   <form action="#" method="post" class="catalog-filter">
     <!--<span class="title-of-checkboxes">Инфраструктура</span>-->
-<fieldset class="catalog-filter-group">
+<fieldset class="catalog-filter-group infrastructure">
   <legend class="catalog-filter-title">Инфраструктура</legend>
   <ul class="catalog-filter-list">
    <li class="catalog-filter-item">
@@ -81,7 +84,7 @@
   </ul>
 </fieldset>
 
-<fieldset>
+<fieldset class="type-of-housing">
 <legend class="catalog-filter-title">Тип жилья</legend>
 <ul class="catalog-filter-list">
   <li class="catalog-filter-item">
@@ -102,7 +105,7 @@
  </ul>
 </fieldset>
 
-<fieldset class="catalog-filter-group">
+<fieldset class="catalog-filter-group price">
 <legend class="catalog-filter-title">Стоимость,Р:</legend>
 <ul class="catalog-price-choice">
   <li class="catalog-price-item">
@@ -113,12 +116,16 @@
   </li>
 </ul>
 </fieldset>
+<div class="choice-buttons">
   <button class="button apply-filters" type="submit">применить</button>
   <button class="button reset-filters" type="reset">Cбросить</button>
+</div>
   </form>
 </section>
+    <!--секция hotels-->
 <section class="hotels">
 <h2 class="visually-hidden">варианты гостиниц</h2>
+<div class="selection-data">
 <span class="number-of-hotels">Найдено гостиниц: 38</span>
   <select class="select-control" aria-label="Сортировка">
     <option value="cheap" class="select-categories">Сначала дешевые</option>
@@ -134,6 +141,7 @@
   <a class="button" href="#">
     <span class="visually-hidden">Показать список</span>
   </a>
+</div>
   <ul class="hotel-card-list">
     <li class="hotel-card">
       <a href="" class="hotel-more-information-link">
@@ -185,9 +193,9 @@
 </li>
   </ul>
 <button class="more-cards">Загрузить ещё</button>
-
+<div class="pagination-block">
 <ol class="catalog-pagination-list">
-  <li class="pagination-item">
+  <li class="pagination-item current-page">
     <a class="pagination-link pagination-current">1</a>
   </li>
   <li class="pagination-item">
@@ -213,7 +221,9 @@
   <option value="three">3</option>
   <option value="for" class="current-number">4</option>
 </select>
+</div>
 </section>
+<!--секция subscription-->
     <section class="subscription catalog-subscription">
     <h2 class="visually-hidden">форма подписки на рассылку</h2>
     <span>Подпишитесь на рассылку</span>
@@ -226,6 +236,7 @@
       </form>
     </section>
   </main>
+  <!--footer-->
     <footer class="page-footer">
       <section class="footer-social">
        <ul class="social">
@@ -257,4 +268,5 @@
         </a>
       </section>
     </footer>
+    </div>
   </body>
