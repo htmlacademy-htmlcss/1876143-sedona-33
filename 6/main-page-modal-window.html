@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Главная страница/модальное окно</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <base href="https://htmlacademy-htmlcss.github.io/1876143-sedona-33/6/">
+</head>
+  <body>
+     <form action="#" class="main-page-modal-window-form" method="post">
+       <h1 class="model-window-title">Поиск гостиницы в Седоне</h1>
+       <button class="modal-windiw-close"><span class="visually-hidde">закрыть</span></button>
+      <ul class="modal-window-list">
+      <li class="modal-window-item"><label >Дата заезда:
+        <input type="text name="check-in" placeholder="27 апреля 2020">
+      </label>
+      </li>
+      <li class="modal-window-item"><label >Дата выезда:
+        <input type="text" step="date" name="departue" placeholder="1 сентября 2021">
+      </label>
+      </li>
+      <li class="modal-window-item"><label for="">Взрослые:
+        <button class="button-prev-number">-</button>
+        <input type="text" name="adults" value="2">
+        <button class="button-next-number">+</button>
+      </label>
+      </li>
+      <li class="modal-window-item"><label for="">Дети:
+        <button class="button-explanation"><span class="visualli-hidden">пояснение</span>
+        </button>
+        <button class="button-prev-number">-</button>
+        <input type="text" name="children" value="1">
+        <button class="button-next-number">+</button>
+      </label>
+      </li>
+    </ul>
+    <button type="submit" class="button modal-window-button">начать поиск</button>
+     </form>
+  </body>
