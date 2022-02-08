@@ -14,13 +14,13 @@
   <nav class="navigation">
     <ul class="navigation-list main-navigation">
       <li class="navigation-item">
-        <a href="#" class="navigation-link">Главная</a>
+        <a href="/index.html" class="navigation-link">Главная</a>
       </li>
       <li class="navigation-item">
         <a href="#" class="navigation-link">О Седоне</a>
       </li>
       <li class="navigation-item">
-        <a href="#" class="navigation-link">Гостиницы</a>
+        <a href="catalog.html" class="navigation-link">Гостиницы</a>
       </li>
     </ul>
 
@@ -35,12 +35,12 @@
           <span class="visually-hidden">избранное</span>
         </a>
       </li>
-      <li class="navigation-user-item">
-         <a href="#section-search" class="navigation-link button">
-          <span class="visually-hidden">хочу сюда</span>
-         </a>
-      </li>
     </ul>
+
+     <!--решила эту ссылку убрать из списка navigation-user-->
+         <a href="#section-search" class="navigation-user-link-button button">
+          <span>хочу сюда</span>
+         </a>
   </nav>
 </header>
 <main class="main-container main-index">
@@ -63,7 +63,7 @@
       своя жизнь</p>
     </div>
       <img src="images/sedona-sity.jpg" alt="город седона" width="800" height="384">
-      <div class="item-details">
+      <div class="item-details light-blue">
         <h2 class="advantage-title details-title">Жильё</h2>
         <p class="advantages-description">Рекомендуем пожить
           в настоящем мотеле,
@@ -74,7 +74,7 @@
         <p class="advantages-description">Всегда заказывайте
           топовый фирменный бургер, вы не разочаруетесь!</p>
       </div>
-      <div class="item-details">
+      <div class="item-details light-blue">
         <h2 class="advantage-title details-title">Сувениры</h2>
         <p class="advantages-description">Не только китайского,
           но и настоящего местного производства!</p>
@@ -88,18 +88,18 @@
     <p class="advantages-description special">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
     </div>
   </li>
-  <li class="advantages-item without-photo">
+  <li class="advantages-item without-photo light-blue">
     <h2 class="advantage-title">Небольшая площадь</h2>
     <span class="advantages-number">— №3 —</span>
     <p class="advantages-description">Все достопримечательности
       находятся очень близко</p>
   </li>
-  <li class="advantages-item without-photo">
+  <li class="advantages-item without-photo dark-blue">
     <h2 class="advantage-title">Красивая дорога</h2>
     <span class="advantages-number">— №4 —</span>
     <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
   </li>
-  <li class="advantages-item without-photo">
+  <li class="advantages-item without-photo light-blue">
     <h2 class="advantage-title">Мало туристов</h2>
     <span class="advantages-number">— №5 —</span>
     <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
@@ -119,7 +119,7 @@
 <section class="subscription">
   <h2 class="visually-hidden">форма подписки на рассылку</h2>
   <span >Подпишитесь на рассылку</span>
-  <p class="description-emails">Только полезная информация и никакого спама,
+  <p class="description-emails">Только полезная информация и никакого спама,<br>
     честное бойскаутское!
     </p>
     <form action="#" mathod="get" class="subscription-form">
