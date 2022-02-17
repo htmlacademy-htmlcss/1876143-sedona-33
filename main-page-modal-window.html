@@ -8,32 +8,43 @@
   </head>
   <body>
      <form action="#" class="main-page-modal-window-form" method="post">
-       <h1 class="model-window-title">Поиск гостиницы в Седоне</h1>
-       <button class="modal-windiw-close"><span class="visually-hidde">закрыть</span></button>
+       <div class="modal-window-title-container">
+       <h1 class="modal-window-title">Поиск гостиницы в Седоне</h1>
+       <button class="modal-window-close"><span class="visually-hidden">закрыть</span>
+      </button>
+    </div>
       <ul class="modal-window-list">
-      <li class="modal-window-item"><label >Дата заезда:
-        <input type="text name="check-in" placeholder="27 апреля 2020">
-      </label>
+      <li class="modal-window-item">
+        <label >Дата заезда:</label>
+        <input type="text name="check-in" placeholder="27
+        апреля 2020">
+        <p class="description-situation">Мы не можем отправить вас в прошлое.</p>
       </li>
-      <li class="modal-window-item"><label >Дата выезда:
+      <li class="modal-window-item">
+        <label >Дата выезда:</label>
         <input type="text" step="date" name="departue" placeholder="1 сентября 2021">
-      </label>
+        <p class="description-situation">На эти даты есть свободные номера. Пока есть.</p>
       </li>
-      <li class="modal-window-item"><label for="">Взрослые:
+      <li class="modal-window-item adults">
+        <label for="">Взрослые:
         <button class="button-prev-number">-</button>
         <input type="text" name="adults" value="2">
         <button class="button-next-number">+</button>
       </label>
       </li>
-      <li class="modal-window-item"><label for="">Дети:
-        <button class="button-explanation"><span class="visualli-hidden">пояснение</span>
+      <li class="modal-window-item children">
+        <label for="">Дети:
+        <button class="button-explanation"><span class="visually-hidden"></span>
         </button>
         <button class="button-prev-number">-</button>
         <input type="text" name="children" value="1">
         <button class="button-next-number">+</button>
       </label>
       </li>
+      <li class="modal-window-item">
+        <button type="submit" class="button modal-window-button start-search">начать поиск</button>
+      </li>
     </ul>
-    <button type="submit" class="button modal-window-button">начать поиск</button>
+
      </form>
   </body>
