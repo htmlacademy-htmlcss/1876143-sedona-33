@@ -124,7 +124,7 @@
   <p class="description-search-process">Укажите предполагаемые даты поездки,
     и мы покажем вам лучшие предложения гостиниц в Седоне
     </p>
-<button class="search-hotel button">поиск гостиницы в седоне</button>
+<a class="search-hotel button" href="main-page-modal-window.html">поиск гостиницы в седоне</a>
 </section>
 <!--секция subscription-->
 <section class="subscription">
@@ -133,7 +133,7 @@
   <p class="description-emails">Только полезная информация и никакого спама,<br>
     честное бойскаутское!
     </p>
-    <form action="#" mathod="get"   class="subscription-form">
+    <form action="https://echo.htmlacademy.ru/"  method="get"   class="subscription-form">
       <label for="#">
       <input type="email" name="email" value="Ваш e-mail" class="input-yuor-email" required>
     </label>
@@ -184,5 +184,65 @@
   </section>
 </footer>
     </div>
+
+    <div class="modal-container modal-container-close-on-index">
+      <div class="modal-content">
+        <form action="https://echo.htmlacademy.ru/" class="main-page-modal-window-form" method="get">
+        <div class="modal-window-title-container">
+        <h1 class="modal-window-title">Поиск гостиницы в Седоне</h1>
+        <button class="modal-window-close">
+          <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <path d="M13 1.2L11.8 0L6.5 5.3L1.2 0L0 1.2L5.3 6.5L0 11.8L1.2 13L6.5 7.7L11.8 13L13 11.8L7.7 6.5L13 1.2Z" fill="black"/>
+         </svg>
+       </button>
+     </div>
+       <ul class="modal-window-list">
+       <li class="modal-window-item">
+         <label class="choice-dates-label">Дата заезда:
+         <input class="check-in-input choice-dates" type="text"  name="check-in" placeholder="27 апреля 2020" required>
+       </label>
+         <p class="description-situation description-false-situation">Мы не можем отправить вас в прошлое.</p>
+       </li>
+       <li class="modal-window-item">
+         <label class="choice-dates-label" >Дата выезда:
+         <input class="departue-input choice-dates" type="text" step="date" name="departue" placeholder="1 сентября 2021" required>
+       </label>
+         <p class="description-situation">На эти даты есть свободные номера. Пока есть.</p>
+       </li>
+       <li class="modal-window-item adults">
+         <label for="">Взрослые:
+         <button class="button-prev-number">-</button>
+         <input class="number-of-person number of adults" type="text" name="adults"  value="2">
+         <button class="button-next-number">+</button>
+       </label>
+       </li>
+       <li class="modal-window-item children">
+         <label for="">Дети:
+         <button class="button-explanation">
+           <span>i</span>
+  <div class="popover">
+   <div class="popover-rectangle"></div>
+           <div class="popover-maim-block">
+               <span class="popover-explanation">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети<br> до 6 лет размещаются<br> бесплатно.</span>
+
+           </div>
+       </div>
+
+         </button>
+         <button class="button-prev-number">-</button>
+         <input class="number-of-person number of children" type="text" name="children" value="1">
+         <button class="button-next-number">+</button>
+       </label>
+       </li>
+       <li class="modal-window-item">
+         <button type="submit" class="button modal-window-button start-search"><span>начать</span></button>
+       </li>
+     </ul>
+
+        </form>
+      </div>
+    </div>
+
+
   </body>
 </html>
