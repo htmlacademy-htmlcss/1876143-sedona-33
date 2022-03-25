@@ -93,7 +93,7 @@
               <li class="catalog-filter-item">
                 <label class="checkbox-container-label">
                   <input class="visually-hidden control-input" type="checkbox" name="wi-fi" disabled>
-                  <span class="control-mark"></span>
+                  <span class="control-mark disabled"></span>
                   <span class="control-label">Wi-Fi</span>
                 </label>
               </li>
@@ -121,7 +121,7 @@
                 <label class="radio-button-label" for="radio-3">
                   <input class="visually-hidden control-input" type="radio" name="rooms" value="Апартаменты"
                     id="radio-3" disabled>
-                  <span class="control-mark radio-mark"></span>
+                  <span class="control-mark radio-mark disabled"></span>
                   <span>Апартаменты</span>
                 </label>
               </li>
@@ -132,21 +132,25 @@
             <ul class="catalog-price-choice">
               <li class="catalog-price-item">
                 <label>
-                  <input class="price-choice-input-area price-choice-input-area-left" type="text" name="from"
+                  <input class="price-choice-input-area price-choice-input-area-left" type="number" name="from"
                     placeholder="от">
                 </label>
               </li>
               <li class="catalog-price-item">
                 <label>
-                  <input class="price-choice-input-area price-choice-input-area-right" type="text" name="to"
+                  <input class="price-choice-input-area price-choice-input-area-right" type="number" name="to"
                     placeholder="до">
                 </label>
               </li>
               <li>
                 <div class="range-scale">
                   <div class="range-bar"></div>
-                  <button class="range-toggle toggle-min" type="button"></button>
-                  <button class="range-toggle toggle-max" type="button"></button>
+                  <button class="range-toggle toggle-min" type="button">
+                    <span class="visually-hidden">минимальная цена.</span>
+                  </button>
+                  <button class="range-toggle toggle-max" type="button">
+                    <span class="visually-hidden">максимальная цена.</span>
+                  </button>
                 </div>
               </li>
             </ul>
@@ -185,12 +189,14 @@
               <svg width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" fill="#000" />
               </svg>
+              <span class="visually-hidden">по одной карточке на странице.</span>
             </a>
             <a href="#" class="button button-style-list">
               <svg width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"
                   fill="#000" />
               </svg>
+              <span class="visually-hidden">по три карточки на странице.</span>
             </a>
             <a href="#" class="button button-style-list">
               <svg width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -198,6 +204,7 @@
                   d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z"
                   fill="#000" />
               </svg>
+              <span class="visually-hidden">в виде списка</span>
             </a>
           </div>
         </div>

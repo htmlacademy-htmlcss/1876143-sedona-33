@@ -873,6 +873,10 @@ body {
   opacity: 0.3;
 }
 
+.disabled {
+  outline: 1px solid #ff5757;
+}
+
 .radio-button-label {
   margin-left: 42px;
 }
@@ -1658,7 +1662,7 @@ body {
 
 .modal-window-title-container {
   display: flex;
-  padding: 62px 70px 0 70px;
+  padding: 37px 69px 0 68px;
   justify-content: space-between;
   background: #ffffff;
   padding-bottom: 54px;
@@ -1689,7 +1693,7 @@ body {
   background: #e6e6e6;
 }
 
-.modal-window-close:activ {
+.modal-window-close:active {
   outline: none;
 }
 
@@ -1765,11 +1769,11 @@ body {
 }
 
 .check-in-input {
-  margin-left: 40px;
+  margin-left: 50px;
 }
 
 .departue-input {
-  margin-left: 36px;
+  margin-left: 44px;
 }
 
 .description-situation {
@@ -1812,6 +1816,7 @@ body {
   text-transform: uppercase;
   color: #000000;
   background: #ffffff;
+  padding-top: 10px;
 }
 
 .wrapp-number-of-person {
@@ -1831,6 +1836,10 @@ body {
   line-height: 40px;
 }
 
+.number-of-children {
+  width: 28px;
+}
+
 .modal-window-button {
   background: #83b3d3;
 }
@@ -1838,6 +1847,10 @@ body {
 .adults {
   grid-column: 1/2;
   margin-bottom: 40px;
+}
+
+.wrapp-number-of-person span {
+  margin-top: 5px;
 }
 
 .adults input {
@@ -1852,7 +1865,7 @@ body {
   grid-column: 2/3;
   width: 43px;
   border: none;
-  margin-left: 186px;
+  margin-left: 194px;
   margin-bottom: 40px;
 }
 
@@ -1860,13 +1873,13 @@ body {
   min-height: 50px;
   margin: 0;
   padding: 0;
-  width: 43px;
+  width: 38px;
   border: none;
 }
 
 .button-prev-number {
   min-height: 50px;
-  width: 45px;
+  width: 52px;
   border: none;
   padding: 0;
   margin-left: 65px;
@@ -1921,7 +1934,7 @@ body {
 }
 
 .button-explanation {
-  margin-left: 14px;
+  margin-left: 12px;
   height: 25px;
   width: 25px;
   border-radius: 15px;
