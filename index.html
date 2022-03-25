@@ -221,19 +221,19 @@
       <ul class="modal-window-list">
         <li class="modal-window-item">
           <label class="choice-dates-label">Дата заезда:
-            <input class="check-in-input choice-dates" type="text" name="check-in" placeholder="27 апреля 2020"
-              required>
+            <input class="check-in-input choice-dates" type="text" name="check-in" placeholder="27 апреля 2020" required>
+            <!-- class="success" содержит текст:"На эти даты есть свободные номера. Пока есть." - успешное заполнение поля-->
+            <!-- class="error" содержит текст:"Мы не можем отправить вас в прошлое." - ошибка в заполнении поля-->
             <span class="visually-hidden">дата заезда</span>
           </label>
-          <p class="description-situation error">Мы не можем отправить вас в прошлое.</p>
         </li>
         <li class="modal-window-item">
           <label class="choice-dates-label">Дата выезда:
-            <input class="departue-input choice-dates" type="text" name="departue" placeholder="1 сентября 2021"
-              required>
+            <input class="departue-input choice-dates" type="text" name="departue" placeholder="1 сентября 2021"required>
+            <!-- class="success" содержит текст:"На эти даты есть свободные номера. Пока есть." - успешное заполнение поля-->
+            <!-- class="error" содержит текст:"Мы не можем отправить вас в прошлое." - ошибка в заполнении поля-->
             <span class="visually-hidden">дата выезда</span>
           </label>
-          <p class="description-situation success">На эти даты есть свободные номера. Пока есть.</p>
         </li>
         <li class="modal-window-item adults">
           <div class="wrapp-number-of-person">
@@ -271,7 +271,7 @@
               <span>-</span>
             </button>
             <label>
-              <input class="number-of-person number of children" type="text" name="children" value="1">
+              <input class="number-of-person number-of-children" type="text" name="children" value="1">
             </label>
             <button class="button-next-number" type="button">
               <span class="visually-hidden">увеличить количество детей</span>
